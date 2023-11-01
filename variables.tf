@@ -6,17 +6,17 @@ variable "s3_bucket_configs" {
     tags   = map(string)
   }))
   default = {
-    bucket1 = {
+    yuzeir-bucket = {
       acl  = "private"
       tags = {
-        Name = "Bucket 1"
+        Name = "yuzeir-bucket"
         Env  = "Development"
       }
     }
-    bucket2 = {
-      acl  = "public-read"
+    yuzeir-bucket2 = {
+      acl  = "private"
       tags = {
-        Name = "Bucket 2"
+        Name = "yuzeir-bucket2"
         Env  = "Production"
       }
     }
